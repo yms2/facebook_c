@@ -105,13 +105,14 @@ header ul li a.active{
     font-size: 1.4em;
 
 }
+
 .imgBx img{
-    margin-left: 50px   ;
-    margin-right:100px;
+    margin-left: 50px;
+    margin-right: 100px;
     max-width: 300px ;
     display: none;
 }
-.imgBx img:active{
+.imgBx img.active{
     display: block;
 }
 .dots
@@ -120,6 +121,8 @@ header ul li a.active{
     top: 50%;
     transform: translateY(-50%);
     right: 80px;
+    display: flex;
+    flex-direction: column;
 }
 .dots .dot{
     position: relative;
@@ -132,4 +135,21 @@ header ul li a.active{
 }
 .dots .dot.active{
     background: #fff;
+}
+.sci{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    margin-right: 20px;
+
+}
+.sci li a{
+    font-size: 1.8em;
+    color: #3b5998;
+}
+.sci li a:hover{
+    color: #2d88ff;
 }
